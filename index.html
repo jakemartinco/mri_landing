@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jake Martin - Martin Research/Insights</title>
+  <title>Martin Research/Insights</title>
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
-    img { max-width: 100%; height: auto; }
+    body {
+      margin: 0;
+      background-color: #f4f3ee;
+      font-family: Menlo, Monaco, monospace;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .container {
+      padding: 40px 60px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .logo-text span:first-child {
+      font-weight: bold;
+      color: #000;
+      letter-spacing: 9px;
+      display: block;
+    }
+
+    .logo-text span:last-child {
+      color: #999;
+      letter-spacing: 9px;
+      display: block;
+    }
+
+    hr {
+      margin-top: 20px;
+      border: none;
+      border-top: 1px solid #999;
+      width: 100%;
+    }
+
+    .contact-link-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+
+    .contact-link a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      color: #999;
+      text-decoration: none;
+    }
+
+    .contact-link a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <img src="mri.png" alt="mri">
+
+  <div class="container">
+    <div class="logo-text">
+      <span>MARTIN</span>
+      <span>RESEARCH/INSIGHTS</span>
+    </div>
+    <hr>
+    <div class="contact-link">
+      <a href="mailto:jakemartinco@gmail.com">Contact</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+
 </body>
 </html>
